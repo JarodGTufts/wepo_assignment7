@@ -7,23 +7,296 @@
 }
 */
 /* smartphones, iPhone, portrait 480x320 phones */ 
-@media (min-width:320px)  {
+@media (max-width:599px)  {
+
+    body {
+        width: auto;
+        background-color: @spanishPink;
+
+    }
+
     #main {
+        grid-column-start: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto 50px;
+    }
+
+    .cities {
+        grid-column-start: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .cities li {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-column-start: auto;
+        background-color: white;
+        border: solid @thulianPink;
+        padding: 20px;
+
+    }
+
+    .city-img {
+        grid-column-start: span 1;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 10px;
+    }
+
+    .text-wrapper {
+        grid-column-start: span 2;
+    }
+
+    .cities li:nth-child(even) .text-wrapper {
+        order: 1;
+        grid-column-start: span 1;
+    }
+
+    .cities li:nth-child(even) .city-img {
+        order: 2;
+        grid-column-start: span 2;
+    }
+
+
+    .text-wrapper p {
+        font-size: .8em;
+    }
+
+    #logo {
+        width: 200px;
+    }
+
+    .pilot img {
+        width: 50%;
+    }
+
+    #primary-nav {
+        grid-column-start: auto;
+        text-align: center;
+        background-color: @persianPink;
+        border-bottom: 8px solid @thulianPink;
+    }
+
+    #secondary-nav {
+        padding: 20px;
+        grid-column-start: auto;
+        text-align: center;
+    }
+
+    #secondary-nav li {
+        display: inline;
+        padding: 20px;
+    }
+
+    #secondary-nav li a {
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .banner-area {
+        width: 100%;
+        grid-column-start: auto;
+        text-align: center;
+    }
+
+    #banner h1 {
+        font-size: 2em;
+        padding-top: 40px;
+        color: white;
+        font-weight: normal;
+    }
+
+    .city-previews {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 40px;
+    }
+
+    .city-previews li {
+        grid-column-start: auto;
+        justify-self: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 75%;
+        padding-top: 75%;
+        border-radius: 50%;
+    }
+
+
+    #right-aside-inside {
+        display: none;
+    }
+
+    #right-aside {
+        display: none;
+    }
+
+    footer {
+        grid-column-start: auto;
+        background-color: @persianPink;
+        border-top: 8px solid @thulianPink;
     }
 
 }
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-@media (min-width:600px)  {  
+@media (min-width:600px) and (max-width:1023px)  { 
+
+    body {
+        width: auto;
+        background-color: @spanishPink;
+
+    }
+
     #main {
+        grid-column-start: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto 50px;
+    }
+
+    .cities {
+        grid-column-start: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cities li {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-column-start: auto;
+        background-color: white;
+        border: solid @thulianPink;
+        padding: 20px;
+
+    }
+
+    .cities li:last-of-type {
+        grid-column-start: span 2;
+    }
+
+    .city-img {
+        grid-column-start: span 2;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 10px;
+    }
+
+    .text-wrapper {
+        grid-column-start: span 3;
+    }
+
+    .cities li:last-of-type .city-img {
+        order: 2;
+    }
+
+    .cities li:last-of-type .text-wrapper {
+        order: 1;
+        padding: 20px;
+    }
+
+
+    .text-wrapper p {
+        font-size: .8em;
+    }
+
+    #logo {
+        width: 200px;
+    }
+
+    .pilot img {
+        width: 50%;
+    }
+
+    #primary-nav {
+        grid-column-start: auto;
+        text-align: center;
+        background-color: @persianPink;
+        border-bottom: 8px solid @thulianPink;
+    }
+
+    #secondary-nav {
+        padding: 20px;
+        grid-column-start: auto;
+        text-align: center;
+    }
+
+    #secondary-nav li {
+        display: inline;
+        padding: 20px;
+    }
+
+    #secondary-nav li a {
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .banner-area {
+        width: 100%;
+        grid-column-start: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    #banner h1 {
+        font-size: 2em;
+        padding-top: 40px;
+        color: white;
+        font-weight: normal;
+    }
+
+    .city-previews {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .city-previews li {
+        grid-column-start: auto;
+        justify-self: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 75%;
+        padding-top: 75%;
+        border-radius: 50%;
+        margin: 40px;
+    }
+
+
+    #right-aside-inside {
+        background-color: @laurelGreen;
+        grid-column-start: auto;
+        text-align: center;
+        padding: 40px;
+    }
+
+    #right-aside-inside p {
+        color: white;
+    }
+
+    #right-aside {
+        display: none;
+    }
+
+    footer {
+        grid-column-start: auto;
+        background-color: @persianPink;
+        border-top: 8px solid @thulianPink;
     }
 }
 
 /* big landscape tablets, laptops, and desktops */ 
-@media (min-width:1025px) {
+@media (min-width:1024px) {
 
     body {
-        width: 100%;
+        width: auto;
         display: grid;
         background-color: @spanishPink;
 
@@ -129,6 +402,7 @@
     }
 
     #right-aside {
+        display: auto;
         background-color: @laurelGreen;
         grid-column-start: auto;
         text-align: center;
