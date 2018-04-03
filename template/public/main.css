@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v12/Qw3aZQNVED7rKGKxtqIqX5EUDXx9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v12/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NanumGothic'), url(https://fonts.gstatic.com/s/nanumgothic/v7/PN_3Rfi-oW3hYwmKDpxS7F_D-djb.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: local('NanumGothic Bold'), local('NanumGothic-Bold'), url(https://fonts.gstatic.com/s/nanumgothic/v7/PN_oRfi-oW3hYwmKDpxS7F_LQv3LyVsj.ttf) format('truetype');
+}
+/*
+* {
+    border: solid black;
+}
+*/
+/* smartphones, iPhone, portrait 480x320 phones */
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+/* big landscape tablets, laptops, and desktops */
+@media (min-width: 1025px) {
+  body {
+    width: 100%;
+    display: grid;
+    background-color: #EDBFB7;
+    grid-template-columns: auto 250px;
+    grid-template-rows: auto;
+  }
+  #main {
+    grid-column-start: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto 50px;
+  }
+  .cities {
+    grid-column-start: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .cities li {
+    grid-column-start: span 1;
+    background-color: white;
+    border: solid #E06C9F;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .city-img {
+    background-size: 250px 150px;
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+  }
+  .text-wrapper p {
+    font-size: .8em;
+  }
+  #logo {
+    width: 200px;
+  }
+  .pilot img {
+    width: 150px;
+  }
+  #primary-nav {
+    grid-column-start: auto;
+    text-align: center;
+    background-color: #F283B6;
+    border-bottom: 8px solid #E06C9F;
+  }
+  #secondary-nav {
+    padding: 20px;
+    grid-column-start: auto;
+    text-align: center;
+  }
+  #secondary-nav li {
+    display: inline;
+    padding: 20px;
+  }
+  #secondary-nav li a {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .banner-area {
+    grid-column-start: auto;
+    text-align: center;
+  }
+  #banner h1 {
+    font-size: 2em;
+    margin-top: 20px;
+    color: white;
+    font-weight: normal;
+  }
+  .city-previews {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 40px;
+  }
+  .city-previews li {
+    grid-column-start: auto;
+    justify-self: center;
+    background-size: 150px 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  #right-aside-inside {
+    display: none;
+  }
+  #right-aside {
+    background-color: #B5BFA1;
+    grid-column-start: auto;
+    text-align: center;
+    border-left: 8px solid #6E9887;
+    padding: 40px;
+  }
+  #right-aside p {
+    color: white;
+  }
+  footer {
+    grid-column-start: auto;
+    background-color: #F283B6;
+    border-top: 8px solid #E06C9F;
+  }
+}
