@@ -22,11 +22,6 @@
   font-weight: 700;
   src: local('NanumGothic Bold'), local('NanumGothic-Bold'), url(https://fonts.gstatic.com/s/nanumgothic/v7/PN_oRfi-oW3hYwmKDpxS7F_LQv3LyVsj.ttf) format('truetype');
 }
-/*
-* {
-    border: solid black;
-}
-*/
 /* smartphones, iPhone, portrait 480x320 phones */
 @media (max-width: 599px) {
   body {
@@ -72,6 +67,10 @@
   }
   .text-wrapper p {
     font-size: .8em;
+    margin-top: 0px;
+  }
+  .text-wrapper h2 {
+    font-weight: normal;
   }
   #logo {
     width: 200px;
@@ -182,6 +181,10 @@
   }
   .text-wrapper p {
     font-size: .8em;
+    margin-top: 0px;
+  }
+  .text-wrapper h2 {
+    font-weight: normal;
   }
   #logo {
     width: 200px;
@@ -246,6 +249,8 @@
   }
   #right-aside-inside p {
     color: white;
+    vertical-align: middle;
+    padding: 20px;
   }
   #right-aside {
     display: none;
@@ -291,6 +296,10 @@
   }
   .text-wrapper p {
     font-size: .8em;
+    margin-top: 0px;
+  }
+  .text-wrapper h2 {
+    font-weight: normal;
   }
   #logo {
     width: 200px;
